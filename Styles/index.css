@@ -1,0 +1,146 @@
+body {
+    background-color: #f1f1f1;
+}
+
+.full_container{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color:#ffffff;
+    width: 100%;
+    padding-left: 0%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.menu {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    list-style: none; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+    font-weight: bold;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #0071BC;
+    padding: 20px;
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase; 
+}
+
+#donar{
+    color:#A2CDDD
+}
+
+#donar:hover{
+    background-color: #0071BC;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center; 
+}
+
+.menu li a:hover{
+background-color: #A2CDDD;
+transition: .4s;
+}
+
+.tex_intro_title_art{
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 100%;
+    margin-top: 10%;
+    padding-left: 10%;
+}
+
+.btn_menu{
+    margin-right: 20px;
+    font-size: 16px;
+    color:#0071BC;
+    cursor: pointer;
+    display: none;
+}
+
+ul.show{
+    top:65px;
+}
+
+/*responsive design*/
+
+@media screen and (max-width:600px){
+    .img_log{
+        font-size: 30px;
+        padding-left: 35px;
+    }
+
+    .img_let{
+        font-size: 30px;
+        padding-left: 35px;
+    }
+
+.menu li a {
+    font-size: 16px;
+}   
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        height: 100%;  
+        background-color: #ffffff;
+    }
+
+    .btn_menu{
+        display: inline-flex;
+    }
+   
+    .menu{
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background: #ffffff;
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+
+    .menu li:hover {
+        background: none;
+    }
+
+    .menu li a {
+        font-size: 20px;
+        color:#0071BC;
+        font-weight: bold;  
+    }
+
+    .menu li a:hover{
+        color:#A2CDDD ;
+    }
+
+    .img_log{
+        font-size: 25px;
+        padding-left: 35px;
+    }
+
+    .img_let{
+        font-size: 25px;
+        padding-left: 35px;
+    }
+}
