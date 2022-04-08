@@ -78,7 +78,7 @@ ul.show{
 
 /*responsive design*/
 
-@media screen and (max-width:600px){
+@media screen and (max-width:500px){
     .img_log{
         font-size: 30px;
         padding-left: 35px;
@@ -92,9 +92,7 @@ ul.show{
 .menu li a {
     font-size: 16px;
 }   
-}
 
-@media screen and (max-width: 600px){
     .container{
         height: 100%;  
         background-color: #ffffff;
